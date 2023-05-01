@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+const { App } = require("./App");
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test("Project details are correct", () => {
+  expect(App).toMatchInLineSnapshot();
+ });
+
+ 
+ module.exports = { App };
