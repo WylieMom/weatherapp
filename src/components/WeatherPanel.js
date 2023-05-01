@@ -7,7 +7,7 @@ const WeatherPanel = () => {
 
     let cityURL = "&q=";
 
-    let urlForecast = "https://api.openweathermap.org/data/2.5/weather?appid=0d7c6a5e9ff1afa1d1201838450f6b5d&units=imperial";
+    let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?appid=0d7c6a5e9ff1afa1d1201838450f6b5d&units=imperial";
 
     const [weather, setWeather] = useState([]);
     const [forecast, setForecast] = useState([]);
